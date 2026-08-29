@@ -12,7 +12,7 @@ public class TwoSum {
                 }
             }
         }
-        throw new IllegalArgumentException("No valid pair found");
+        return new int[]{};
     }
 
     public static void main(String[] args) {
