@@ -1,4 +1,4 @@
-package arrays.assigment_problems;
+package arrays.class_problems;
 
 import java.util.Arrays;
 
