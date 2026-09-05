@@ -5,11 +5,12 @@ import java.util.Arrays;
 public class FindTopThreeScores {
 
     static int[] findTopThreeScores(int[] scores) {
-        int first = Integer.MIN_VALUE;
-        int second = Integer.MIN_VALUE;
-        int third = Integer.MIN_VALUE;
+        int first = 0;
+        int second = 0;
+        int third = 0;
 
-        for (int score : scores) {
+        for (int i=0;i<scores.length;i++) {
+            int score= scores[i];
             if (score >= first) {
                 third = second;
                 second = first;
