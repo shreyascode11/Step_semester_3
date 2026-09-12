@@ -1,0 +1,21 @@
+package day1.assigment_problems;
+
+public class CheckDuplicateSeats {
+
+    static void checkDuplicateSeats(int[] seatNumbers) {
+        for (int i = 0; i < seatNumbers.length; i++) {
+            for (int j = i + 1; j < seatNumbers.length; j++) {
+                if (seatNumbers[i] == seatNumbers[j]) {
+                    System.out.println("Duplicate Seat Number Found: " + seatNumbers[i]);
+                    return;
+                }
+            }
+        }
+        System.out.println("No Duplicate Seats Found");
+    }
+
+    public static void main(String[] args) {
+        checkDuplicateSeats(new int[]{101, 102, 103, 102, 105});
+        checkDuplicateSeats(new int[]{101, 102, 103, 104, 105});
+    }
+}
